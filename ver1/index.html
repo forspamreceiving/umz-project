@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>БТ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="flex">
+    <div id="tabs-wrapper">
+      <section id="section1">
+        <label>
+          <input type="radio" name="tabs" value="tab1">
+          <div>Создание заявки</div>
+        </label>
+      </section>
+      <section id="section2">
+        <label>
+          <input type="radio" name="tabs" value="tab2">
+          <div>Заявки</div>
+        </label>
+      </section>
+      <section id="section3">
+        <label>
+          <input type="radio" name="tabs" value="tab3">
+          <div>Специальности</div>
+        </label>
+      </section>
+    </div>
+    <div id="page-content">
+      <fieldset name="1">
+        <legend>Форма заявки</legend>
+        <textarea placeholder="Фамилия" style="width:30.5%"></textarea>
+        <textarea placeholder="Имя" style="width:30.5%"></textarea>
+        <textarea placeholder="Отчество" style="width:30.5%"></textarea>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Социальный статус</option>
+          <option>Беременная</option>
+          <option>Инвалид</option>
+          <option>Безработный</option>
+          <option>фывфыв</option>
+        </select>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Специальность</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+        </select>
+        <legend>Дата рождения</legend>
+        <input type="date">
+        <legend>Паспортные данные</legend>
+        <textarea placeholder="Серия" style="width:10%"></textarea>
+        <textarea placeholder="Номер" style="width:15%"></textarea>
+        <legend>Адрес</legend>
+        <textarea placeholder="Адрес прописки" style="display:block;width:80%;"></textarea>
+        <textarea placeholder="Адрес фактического проживания" style="display:block;width:80%;"></textarea>
+        <legend>Контактные данные</legend>
+        <textarea placeholder="Номер мобильного телефона" style="display:block;width:30%;"></textarea>
+        <textarea placeholder="Адрес электронной почты" style="display:block;width:30%;"></textarea>
+        <button>Очистить заявку</button>
+        <button>Создать форму</button>
+      </fieldset>
+      <fieldset name="2">
+        <legend>Специальности</legend>
+        <div id="select-wrapper">
+          <select style="width:30.5%">
+            <option selected disabled style="color:grey;">Специальность</option>
+          </select>
+          <select style="width:30.5%">
+            <option selected disabled style="color:grey;">Район</option>
+          </select>
+          <select style="width:30.5%">
+            <option selected disabled style="color:grey;">Площадка</option>
+          </select>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Специальность</th>
+              <th>Район</th>
+              <th>Площадка</th>
+              <th>Номер группы</th>
+              <th>Преподаватель</th>
+              <th>Кол-во обучающихся</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>Сантехник</th>
+            <th>Фрунзенский</th>
+            <th>Фрун. №3</th>
+            <th>1488</th>
+            <th>Иванов И.И.</th>
+            <th>228</th>
+          </tr>
+          <tr style="height:500px;">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+        <button>Отмена</button>
+        <button>Выбор</button>
+      </fieldset>
+      <fieldset name="3">
+        <legend>Поиск заявок</legend>
+        <textarea placeholder="Фамилия" style="width:30.5%"></textarea>
+        <textarea placeholder="Имя" style="width:30.5%"></textarea>
+        <textarea placeholder="Отчество" style="width:30.5%"></textarea>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Социальный статус</option>
+          <option>Беременная</option>
+          <option>Инвалид</option>
+          <option>Безработный</option>
+          <option>фывфыв</option>
+        </select>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Специальность</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+        </select>
+        <legend>Дата рождения</legend>
+        <input type="date">
+        <legend>Паспортные данные</legend>
+        <textarea placeholder="Серия" style="width:10%"></textarea>
+        <textarea placeholder="Номер" style="width:15%"></textarea>
+        <legend>Адрес</legend>
+        <textarea placeholder="Адрес прописки" style="display:block;width:80%;"></textarea>
+        <textarea placeholder="Адрес фактического проживания" style="display:block;width:80%;"></textarea>
+        <legend>Контактные данные</legend>
+        <textarea placeholder="Номер мобильного телефона" style="display:block;width:30%;"></textarea>
+        <textarea placeholder="Адрес электронной почты" style="display:block;width:30%;"></textarea>
+        <button>Очистить фильтры</button>
+        <button>Поиск</button>
+      </fieldset>
+      <fieldset name="4">
+        <legend>Результаты поиска</legend>
+        <table>
+          <thead>
+            <tr>
+              <th>Статус</th>
+              <th>Дата оформления</th>
+              <th>Фамилия</th>
+              <th>Имя</th>
+              <th>Отчество</th>
+              <th>Специальность</th>
+              <th>Паспорт</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>Отменена</th>
+            <th>01.01.2018</th>
+            <th>Иванов</th>
+            <th>Иван</th>
+            <th>Иванович</th>
+            <th>Сантехник</th>
+            <th>4013 123456</th>
+          </tr>
+          <tr style="height:500px;">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+        <button>Отмена</button>
+        <button>Назад</button>
+        <button>Отзыв</button>
+        <button>История</button>
+        <button>Открыть</button>
+      </fieldset>
+      <fieldset name="5">
+        <legend>Редактирование заявки</legend>
+        <textarea placeholder="Фамилия" style="width:30.5%"></textarea>
+        <textarea placeholder="Имя" style="width:30.5%"></textarea>
+        <textarea placeholder="Отчество" style="width:30.5%"></textarea>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Социальный статус</option>
+          <option>Беременная</option>
+          <option>Инвалид</option>
+          <option>Безработный</option>
+          <option>фывфыв</option>
+        </select>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Специальность</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+        </select>
+        <legend>Дата рождения</legend>
+        <input type="date">
+        <legend>Паспортные данные</legend>
+        <textarea placeholder="Серия" style="width:10%"></textarea>
+        <textarea placeholder="Номер" style="width:15%"></textarea>
+        <legend>Адрес</legend>
+        <textarea placeholder="Адрес прописки" style="display:block;width:80%;"></textarea>
+        <textarea placeholder="Адрес фактического проживания" style="display:block;width:80%;"></textarea>
+        <legend>Контактные данные</legend>
+        <textarea placeholder="Номер мобильного телефона" style="display:block;width:30%;"></textarea>
+        <textarea placeholder="Адрес электронной почты" style="display:block;width:30%;"></textarea>
+        <button>Отмена</button>
+        <button>Сохранить</button>
+      </fieldset>
+      <fieldset name="6">
+        <legend>История изменений</legend>
+        <table>
+          <thead>
+            <tr>
+              <th>Дата изменения</th>
+              <th>Тип изменения</th>
+              <th>Автор изменения</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>02.01.2018</th>
+            <th>Редактирование</th>
+            <th>Оператор на бирже труда</th>
+          </tr>
+          <tr style="height:250px;">
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+      </fieldset>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

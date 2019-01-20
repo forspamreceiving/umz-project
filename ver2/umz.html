@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>УМЦ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="header_bar">
+      <div>Профиль тут
+        <button id="sign_out">Выйти</button>
+      </div>
+    </div>
+    <div id="current_section">ТУТ НАЗВАНИЕ РАЗДЕЛА ВСТАВИТЬ ЧЕРЕЗ ДЖС</div>
+    <nav id="slider_menu">
+      <label onclick="onMenuElemClick('1')">
+        <div>
+          <img src="close.png">
+        </div>
+        <a href="#">Заявки</a>
+      </label>
+      <label onclick="onMenuElemClick('2')">
+        <div>
+          <img src="close.png">
+        </div>
+        <a href="#">Обучение</a>
+      </label>
+      <label onclick="onMenuElemClick('3')">
+        <div>
+          <img src="close.png">
+        </div>
+        <a href="#">Обучающийся</a>
+      </label>
+      <label onclick="onMenuElemClick('4')">
+        <div>
+          <img src="close.png">
+        </div>
+        <a href="#">Документы</a>
+      </label>
+    </nav>
+  </header>
+  <div id="content">
+    <div class="buttons-head">
+      <button style="width:24%">Безработные</button>
+      <button style="width:24%">Пенсионеры</button>
+      <button style="width:24%">Инвалиды</button>
+      <button style="width:24%">С ребенком</button>
+    </div>
+    <form id="1" class="content_form">
+      <p>
+      </p>
+      <button onclick="ModalWindow('search')">Поиск</button>
+      <button>Отмена поиска</button>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="8">Результаты поиска</th>
+          </tr>
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Серия пасп.</th>
+            <th>Номер пасп.</th>
+            <th>Специальность</th>
+            <th>Дата оформления</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>Иванов</th>
+          <th>Иван</th>
+          <th>Иванович</th>
+          <th>4013</th>
+          <th>123456</th>
+          <th>Сантехник</th>
+          <th>01.01.2018</th>
+          <th>Ожидает рассмотрения</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Петров</th>
+          <th>Петр</th>
+          <th>Петрович</th>
+          <th>4013</th>
+          <th>125215</th>
+          <th>Сварщик</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Сергеев</th>
+          <th>Сергей</th>
+          <th>Сергеевич</th>
+          <th>4013</th>
+          <th>127612</th>
+          <th>Печник</th>
+          <th>01.01.2018</th>
+          <th>Отправлена на редактирование</th>
+        </tr>
+        <tr style="height:250px">
+          <th colspan="8"></th>
+        </tr>
+      </table>
+      <button onclick="ModalWindow('add_to_group')">Добавить в группу</button>
+      <button onclick=" ModalWindow('dismiss')">Отклонить заявку</button>
+      <button onclick="ModalWindow('edit')">Открыть заявку</button>
+    </form>
+    <form id="1.2" class="content_form" style="visibility:hidden;position:absolute">
+      <p>
+      </p>
+      <button onclick="ModalWindow('search')">Поиск</button>
+      <button>Отмена поиска</button>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="8">Результаты поиска</th>
+          </tr>
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Серия пасп.</th>
+            <th>Номер пасп.</th>
+            <th>Специальность</th>
+            <th>Дата оформления</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>Александров</th>
+          <th>Александр</th>
+          <th>Александрович</th>
+          <th>4013</th>
+          <th>512452</th>
+          <th>Менеджер</th>
+          <th>01.01.2018</th>
+          <th>Ожидает рассмотрения</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Евпатеев</th>
+          <th>Евпатий</th>
+          <th>Евпатьевич</th>
+          <th>4013</th>
+          <th>122125</th>
+          <th>1С</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Александрова</th>
+          <th>Александра</th>
+          <th>Александровна</th>
+          <th>4013</th>
+          <th>127612</th>
+          <th>Мастер-трубочист</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr style="height:250px">
+          <th colspan="8"></th>
+        </tr>
+      </table>
+      <button onclick="ModalWindow('add_to_group')">Добавить в группу</button>
+      <button onclick=" ModalWindow('dismiss')">Отклонить заявку</button>
+      <button onclick="ModalWindow('edit')">Открыть заявку</button>
+    </form>
+    <form id="1.3" class="content_form" style="visibility:hidden;position:absolute">
+      <p>
+      </p>
+      <button onclick="ModalWindow('search')">Поиск</button>
+      <button>Отмена поиска</button>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="8">Результаты поиска</th>
+          </tr>
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Серия пасп.</th>
+            <th>Номер пасп.</th>
+            <th>Специальность</th>
+            <th>Дата оформления</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>Малевич</th>
+          <th>Митя</th>
+          <th>Игоревич</th>
+          <th>4013</th>
+          <th>512452</th>
+          <th>Маляр</th>
+          <th>01.01.2018</th>
+          <th>Ожидает рассмотрения</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Седой</th>
+          <th>Максим</th>
+          <th>Максимович</th>
+          <th>4013</th>
+          <th>122125</th>
+          <th>1С</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Шевченко</th>
+          <th>Тарас</th>
+          <th>Иванович</th>
+          <th>4013</th>
+          <th>127612</th>
+          <th>Водопроводчик</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr style="height:250px">
+          <th colspan="8"></th>
+        </tr>
+      </table>
+      <button onclick="ModalWindow('add_to_group')">Добавить в группу</button>
+      <button onclick=" ModalWindow('dismiss')">Отклонить заявку</button>
+      <button onclick="ModalWindow('edit')">Открыть заявку</button>
+    </form>
+    <form id="1.4" class="content_form" style="visibility:hidden;position:absolute">
+      <p>
+      </p>
+      <button onclick="ModalWindow('search')">Поиск</button>
+      <button>Отмена поиска</button>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="8">Результаты поиска</th>
+          </tr>
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Серия пасп.</th>
+            <th>Номер пасп.</th>
+            <th>Специальность</th>
+            <th>Дата оформления</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>Петренко</th>
+          <th>Анна</th>
+          <th>Владимировна</th>
+          <th>4013</th>
+          <th>148822</th>
+          <th>Пение ртом</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Самчук</th>
+          <th>Марина</th>
+          <th>Ивановна</th>
+          <th>4013</th>
+          <th>122125</th>
+          <th>Водитель</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Александрова</th>
+          <th>Александра</th>
+          <th>Александровна</th>
+          <th>4013</th>
+          <th>127612</th>
+          <th>Мастер-трубочист</th>
+          <th>01.01.2018</th>
+          <th>Отклонена</th>
+        </tr>
+        <tr style="height:250px">
+          <th colspan="8"></th>
+        </tr>
+      </table>
+      <button onclick="ModalWindow('add_to_group')">Добавить в группу</button>
+      <button onclick=" ModalWindow('dismiss')">Отклонить заявку</button>
+      <button onclick="ModalWindow('edit')">Открыть заявку</button>
+    </form>
+    <form id="2" class="content_form" style="visibility:hidden;position:absolute;top:0">
+      <button onclick="ModalWindow('group_search')">Поиск</button>
+      <button>Отмена поиска</button>
+      <button onclick="ModalWindow('group_create')">Создать группу</button>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="11">Группы</th>
+          </tr>
+          <tr>
+            <th>№</th>
+            <th>№УГ</th>
+            <th>Площадка</th>
+            <th>Специальность</th>
+            <th>Кол-во часов</th>
+            <th>Кол-во чел./час.</th>
+            <th>Вид гос.услуги</th>
+            <th>Форма оказ-я услуги</th>
+            <th>Период обучения</th>
+            <th>Кол-во чел.в группе</th>
+            <th>Проверка</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>31</th>
+          <th>31/УВы-03</th>
+          <th>Выборг</th>
+          <th>Вод погр</th>
+          <th>240</th>
+          <th>1680</th>
+          <th>ПП раб. и сл.</th>
+          <th>сет.</th>
+          <th>27.02-20.04</th>
+          <th>7</th>
+          <th>7</th>
+        </tr>
+        <tr class="row-hover">
+          <th>32</th>
+          <th>32/СФ-18</th>
+          <th>С-Петербург</th>
+          <th>1С</th>
+          <th>98</th>
+          <th>686</th>
+          <th>Пов.квал.</th>
+          <th>сет.</th>
+          <th>01.03-22.03</th>
+          <th>7</th>
+          <th>7</th>
+        </tr>
+        <tr class="row-hover">
+          <th>33</th>
+          <th>33/СФ-19</th>
+          <th>С-Петербург</th>
+          <th>Упр закуп</th>
+          <th>120</th>
+          <th>3000</th>
+          <th>Пов.квал.</th>
+          <th>сет.</th>
+          <th>01.03-28.03</th>
+          <th>25</th>
+          <th>25</th>
+        </tr>
+        <tr style="height:250px">
+          <th colspan="11"></th>
+        </tr>
+      </table>
+      <button>Удалить</button>
+      <button onclick="ModalWindow('group_open')">Открыть</button>
+    </form>
+    <form id="3" class="content_form" style="visibility:hidden;position:absolute;top:0">
+      <button onclick="ModalWindow('student_open2')">Поиск</button>
+      <button>Отмена поиска</button>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="9">Результаты поиска</th>
+          </tr>
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Серия пасп.</th>
+            <th>Номер пасп.</th>
+            <th>Специальность</th>
+            <th>Дата зачисления</th>
+            <th>Статус</th>
+            <th>Группа</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>Иванов</th>
+          <th>Иван</th>
+          <th>Иванович</th>
+          <th>4013</th>
+          <th>212132</th>
+          <th>Маляр</th>
+          <th>01.01.2018</th>
+          <th>Обучается</th>
+          <th>1488</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Шевченко</th>
+          <th>Тарас</th>
+          <th>Сергеевич</th>
+          <th>4013</th>
+          <th>123456</th>
+          <th>Сантехник</th>
+          <th>01.01.2018</th>
+          <th>Обучается</th>
+          <th>228</th>
+        </tr>
+        <tr class="row-hover">
+          <th>Петренко</th>
+          <th>Анна</th>
+          <th>Владимировна</th>
+          <th>4013</th>
+          <th>712626</th>
+          <th>Пение ртом</th>
+          <th>01.01.2018</th>
+          <th>Обучается</th>
+          <th>1337</th>
+        </tr>
+        <tr style="height:200px">
+          <th colspan="9"></th>
+        </tr>
+      </table>
+      <button onclick="ModalWindow('student_history')">История обучения</button>
+      <button onclick="ModalWindow('student_open')">Открыть</button>
+    </form>
+    <form id="4" class="content_form" style="visibility:hidden;position:absolute;top:0">
+      <input type="text">
+      <button>Поиск</button>
+      <button>Отмена поиска</button>
+      <ul id="navmenu-v">
+        <li><a href="#">Документы</a>
+          <ul>
+            <li><a href="#">Приказ</a>
+              <ul>
+                <li><a href="#">Приказ о зачислении</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Журнал</a>
+              <ul>
+                <li><a href="#">Журнал учета практического и теоретического учета</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Справка</a>
+              <ul>
+                <li><a href="#">Справка о посещаемости</a></li>
+                <li><a href="#">Справка о текущей успеваемости обучающихся</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Акт</a>
+              <ul>
+                <li><a href="#">Акт на списание удостоверений (свидетельств, дипломов)</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Анкета</a>
+              <ul>
+                <li><a href="#">Анкета оценки курсов</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p></p>
+      <p style="background-color:white;text-align:center;padding: 275px 0 275px 0">Пример документа</p>
+      <p></p>
+      <button style="float:right">Печать</button>
+      <button style="float:right">Предпросмотр</button>
+    </form>
+  </div>
+
+  <script>
+    /*$("#menu_btn").click(function() {
+      $("#slider_menu").animate({
+        left: '0px'
+      });
+    });
+
+    $("#close_menu").click(function() {
+      $("#slider_menu").animate({
+        left: '-' + $("#slider_menu").width() + 'px'
+      });
+    });
+    */
+    $("button").click(function(event) {
+      event.preventDefault();
+    });
+  </script>
+  <script src="myscript.js"></script>
+</body>
+<div id="modal" style="visibility:hidden;position:absolute">
+  <form id="search" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Поиск</legend>
+    <h4>Основная информация</h4>
+    <textarea placeholder="Фамилия"></textarea>
+    <textarea placeholder="Имя"></textarea>
+    <textarea placeholder="Отчество"></textarea>
+    <p></p>
+    <input type="text" list="social_status" placeholder="Социальный статус">
+    <datalist id="social_status">
+      <option value="Безработный"></option>
+      <option value="Пенсионер"></option>
+      <option value="Беременная"></option>
+      <option value="Инвалид"></option>
+    </datalist>
+    <input type="text" list="speciality" placeholder="Специальность">
+    <datalist id="speciality">
+      <option value="Сантехник"></option>
+      <option value="Грузчик"></option>
+      <option value="Менеджер по клинингу"></option>
+      <option value="Продавец"></option>
+    </datalist>
+    <input type="date">
+    <h4>Адрес прописки</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Адрес фактического проживания</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Контактные данные</h4>
+    <input type="text" placeholder="Электронная почта">
+    <input type="text" placeholder="Контактный телефон">
+    <p></p>
+    <button style="float:right" onclick="ModalWindow('search')">Закрыть</button>
+    <button style="float:right">Сбросить фильтры</button>
+    <button style="float:right" onclick="ModalWindow('search')">Поиск</button>
+  </form>
+  <form id="edit" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Заявка</legend>
+    <h4>Основная информация</h4>
+    <textarea placeholder="Фамилия"></textarea>
+    <textarea placeholder="Имя"></textarea>
+    <textarea placeholder="Отчество"></textarea>
+    <p></p>
+    <input type="text" list="social_status" placeholder="Социальный статус">
+    <datalist id="social_status">
+      <option value="Безработный"></option>
+      <option value="Пенсионер"></option>
+      <option value="Беременная"></option>
+      <option value="Инвалид"></option>
+    </datalist>
+    <input type="text" list="speciality" placeholder="Специальность">
+    <datalist id="speciality">
+      <option value="Сантехник"></option>
+      <option value="Грузчик"></option>
+      <option value="Менеджер по клинингу"></option>
+      <option value="Продавец"></option>
+    </datalist>
+    <input type="date">
+    <h4>Адрес прописки</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Адрес фактического проживания</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Контактные данные</h4>
+    <input type="text" placeholder="Электронная почта">
+    <input type="text" placeholder="Контактный телефон">
+    <p></p>
+    <button style="float:right" onclick="ModalWindow('edit')">Закрыть</button>
+    <button style="float:right" onclick="ModalWindow('edit')">Сбросить</button>
+    <button style="float:right">Сохранить</button>
+    <button style="float:right" onclick="ModalWindow('edit')">Редактировать</button>
+  </form>
+  <form id="dismiss" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Отклонение заявки</legend>
+    <input type="text" list="dismiss_reason" placeholder="Причина" style="width:98%">
+    <datalist id="dismiss_reason">
+      <option value="Некорректные данные"></option>
+      <option value="Нет ответа от заявителя"></option>
+      <option value="Отказ заявителя"></option>
+    </datalist>
+    <p></p>
+    <button style="float:right" onclick="ModalWindow('dismiss')">Отмена</button>
+    <button style="float:right" onclick="ModalWindow('dismiss')">Отклонить</button>
+  </form>
+  <form id="add_to_group" class="modal_content" style="width:20%">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Перейти в редактор групп?</legend>
+    <p></p>
+    <button style="float:right" onclick="ModalWindow('add_to_group')">Нет</button>
+    <button style="float:right" onclick="ModalWindow('add_to_group')">Да</button>
+  </form>
+  <form id="group_search" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Поиск групп</legend>
+    <input type="text" list="group_create_speciality" placeholder="Специальность">
+    <datalist id="group_create_speciality">
+      <option value="Вод погр"></option>
+      <option value="1С"></option>
+      <option value="Упр закупками"></option>
+    </datalist>
+    <input type="text" list="group_create_area" placeholder="Площадка">
+    <datalist id="group_create_area">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="group_create_teacher" placeholder="Вид гос.услуги">
+    <datalist id="group_create_teacher">
+      <option value="ПП раб. и сл."></option>
+      <option value="Пов.квал."></option>
+      <option value="Проф.препод"></option>
+    </datalist>
+    <p></p>
+    <input type="text" list="group_create_number" placeholder="Номер группы">
+    <datalist id="group_create_number">
+      <option value="31/УВы-03"></option>
+      <option value="32/СФ-18"></option>
+      <option value="33/СФ-19"></option>
+    </datalist>
+    <input type="text" list="group_create_students_amount" placeholder="Кол-во чел.в группе">
+    <datalist id="group_create_students_amount">
+      <option value="7"></option>
+      <option value="14"></option>
+      <option value="21"></option>
+    </datalist>
+    <input type="text" list="group_create_form" placeholder="Форма оказания услуги">
+    <datalist id="group_create_form">
+      <option value="Очн."></option>
+      <option value="Сет."></option>
+      <option value="Дист."></option>
+    </datalist>
+    <p></p>
+    <input type="text" list="group_create_hours" placeholder="Кол-во часов обучения">
+    <datalist id="group_create_hours">
+      <option value="0-100"></option>
+      <option value="100-300"></option>
+      <option value="300-500"></option>
+    </datalist>
+    <input type="text" list="group_create_students_checked" placeholder="Проверенно человек">
+    <datalist id="group_create_students_checked">
+      <option value="0-5"></option>
+      <option value="5-10"></option>
+      <option value="10-20"></option>
+    </datalist>
+    <p></p>
+    <p>Дата формирования</p>
+    <input type="date">
+    <p>Дата начала обучения</p>
+    <input type="date">
+    <p>Дата окончания обучения</p>
+    <input type="date">
+    <p></p>
+    <div class="tables">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">Сформированная группа</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>Иванов И.И.</th>
+          <th>
+            <button onclick="ModalWindow('user_profile')">Профиль</button>
+          </th>
+          <th>
+            <button>Добавить</button>
+          </th>
+          <th>
+            <button>Удалить</button>
+          </th>
+        </tr>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">Ожидают распределения</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>Иванов И.И</th>
+          <th>
+            <button onclick="ModalWindow('user_profile')">Профиль</button>
+          </th>
+          <th>
+            <button>Добавить</button>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <button style="float:right" onclick="ModalWindow('group_search')">Назад</button>
+    <button style="float:right">Очистить фильтры</button>
+    <button style="float:right" onclick="ModalWindow('group_search')">Поиск</button>
+  </form>
+  <form id="group_create" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Создать группу</legend>
+    <input type="text" list="group_create_speciality" placeholder="Специальность">
+    <datalist id="group_create_speciality">
+      <option value="Вод погр"></option>
+      <option value="1С"></option>
+      <option value="Упр закупками"></option>
+    </datalist>
+    <input type="text" list="group_create_area" placeholder="Площадка">
+    <datalist id="group_create_area">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="group_create_teacher" placeholder="Вид гос.услуги">
+    <datalist id="group_create_teacher">
+      <option value="ПП раб. и сл."></option>
+      <option value="Пов.квал."></option>
+      <option value="Проф.препод"></option>
+    </datalist>
+    <p></p>
+    <input type="text" list="group_create_number" placeholder="Номер группы">
+    <datalist id="group_create_number">
+      <option value="31/УВы-03"></option>
+      <option value="32/СФ-18"></option>
+      <option value="33/СФ-19"></option>
+    </datalist>
+    <input type="text" list="group_create_students_amount" placeholder="Кол-во чел.в группе">
+    <datalist id="group_create_students_amount">
+      <option value="7"></option>
+      <option value="14"></option>
+      <option value="21"></option>
+    </datalist>
+    <input type="text" list="group_create_form" placeholder="Форма оказания услуги">
+    <datalist id="group_create_form">
+      <option value="Очн."></option>
+      <option value="Сет."></option>
+      <option value="Дист."></option>
+    </datalist>
+    <p></p>
+    <input type="text" list="group_create_hours" placeholder="Кол-во часов обучения">
+    <datalist id="group_create_hours">
+      <option value="0-100"></option>
+      <option value="100-300"></option>
+      <option value="300-500"></option>
+    </datalist>
+    <input type="text" list="group_create_students_checked" placeholder="Проверенно человек">
+    <datalist id="group_create_students_checked">
+      <option value="0-5"></option>
+      <option value="5-10"></option>
+      <option value="10-20"></option>
+    </datalist>
+    <p></p>
+    <p>Дата формирования</p>
+    <input type="date">
+    <p>Дата начала обучения</p>
+    <input type="date">
+    <p>Дата окончания обучения</p>
+    <input type="date">
+    <p></p>
+    <div class="tables">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">Сформированная группа</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>Иванов И.И.</th>
+          <th>
+            <button onclick="ModalWindow('user_profile')">Профиль</button>
+          </th>
+          <th>
+            <button>Добавить</button>
+          </th>
+          <th>
+            <button>Удалить</button>
+          </th>
+        </tr>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">Ожидают распределения</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>Иванов И.И</th>
+          <th>
+            <button onclick="ModalWindow('user_profile')">Профиль</button>
+          </th>
+          <th>
+            <button>Добавить</button>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <button style="float:right" onclick="ModalWindow('group_create')">Отмена</button>
+    <button style="float:right" onclick="ModalWindow('group_create')">Утвердить состав</button>
+  </form>
+  <form id="user_profile" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Профиль пользователя</legend>
+    <h4>Основная информация</h4>
+    <textarea placeholder="Фамилия"></textarea>
+    <textarea placeholder="Имя"></textarea>
+    <textarea placeholder="Отчество"></textarea>
+    <p></p>
+    <input type="text" list="social_status" placeholder="Социальный статус">
+    <datalist id="social_status">
+      <option value="Безработный"></option>
+      <option value="Пенсионер"></option>
+      <option value="Беременная"></option>
+      <option value="Инвалид"></option>
+    </datalist>
+    <input type="text" list="speciality" placeholder="Специальность">
+    <datalist id="speciality">
+      <option value="Сантехник"></option>
+      <option value="Грузчик"></option>
+      <option value="Менеджер по клинингу"></option>
+      <option value="Продавец"></option>
+    </datalist>
+    <input type="date">
+    <h4>Адрес прописки</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Адрес фактического проживания</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Контактные данные</h4>
+    <input type="text" placeholder="Электронная почта">
+    <input type="text" placeholder="Контактный телефон">
+    <p></p>
+    <button style="float:right" onclick="ModalWindow('user_profile')">Закрыть</button>
+  </form>
+  <form id="group_open" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Группа</legend>
+    <input type="text" list="group_create_speciality" placeholder="Специальность">
+    <datalist id="group_create_speciality">
+      <option value="Вод погр"></option>
+      <option value="1С"></option>
+      <option value="Упр закупками"></option>
+    </datalist>
+    <input type="text" list="group_create_area" placeholder="Площадка">
+    <datalist id="group_create_area">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="group_create_teacher" placeholder="Вид гос.услуги">
+    <datalist id="group_create_teacher">
+      <option value="ПП раб. и сл."></option>
+      <option value="Пов.квал."></option>
+      <option value="Проф.препод"></option>
+    </datalist>
+    <p></p>
+    <input type="text" list="group_create_number" placeholder="Номер группы">
+    <datalist id="group_create_number">
+      <option value="31/УВы-03"></option>
+      <option value="32/СФ-18"></option>
+      <option value="33/СФ-19"></option>
+    </datalist>
+    <input type="text" list="group_create_students_amount" placeholder="Кол-во чел.в группе">
+    <datalist id="group_create_students_amount">
+      <option value="7"></option>
+      <option value="14"></option>
+      <option value="21"></option>
+    </datalist>
+    <input type="text" list="group_create_form" placeholder="Форма оказания услуги">
+    <datalist id="group_create_form">
+      <option value="Очн."></option>
+      <option value="Сет."></option>
+      <option value="Дист."></option>
+    </datalist>
+    <p></p>
+    <input type="text" list="group_create_hours" placeholder="Кол-во часов обучения">
+    <datalist id="group_create_hours">
+      <option value="0-100"></option>
+      <option value="100-300"></option>
+      <option value="300-500"></option>
+    </datalist>
+    <input type="text" list="group_create_students_checked" placeholder="Проверенно человек">
+    <datalist id="group_create_students_checked">
+      <option value="0-5"></option>
+      <option value="5-10"></option>
+      <option value="10-20"></option>
+    </datalist>
+    <p></p>
+    <p>Дата формирования</p>
+    <input type="date">
+    <p>Дата начала обучения</p>
+    <input type="date">
+    <p>Дата окончания обучения</p>
+    <input type="date">
+    <p></p>
+    <div class="tables">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">Сформированная группа</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>Иванов И.И.</th>
+          <th>
+            <button onclick="ModalWindow('user_profile')">Профиль</button>
+          </th>
+          <th>
+            <button>Добавить</button>
+          </th>
+          <th>
+            <button>Удалить</button>
+          </th>
+        </tr>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">Ожидают распределения</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>Иванов И.И</th>
+          <th>
+            <button onclick="ModalWindow('user_profile')">Профиль</button>
+          </th>
+          <th>
+            <button>Добавить</button>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <button style="float:right" onclick="ModalWindow('group_open')">Отменить</button>
+    <button style="float:right" onclick="ModalWindow('group_open')">Сохранить изменения</button>
+  </form>
+  <form id="student_open" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Обучающийся</legend>
+    <h4>Основная информация</h4>
+    <textarea placeholder="Фамилия"></textarea>
+    <textarea placeholder="Имя"></textarea>
+    <textarea placeholder="Отчество"></textarea>
+    <p></p>
+    <input type="text" list="social_status" placeholder="Социальный статус">
+    <datalist id="social_status">
+      <option value="Безработный"></option>
+      <option value="Пенсионер"></option>
+      <option value="Беременная"></option>
+      <option value="Инвалид"></option>
+    </datalist>
+    <input type="text" list="speciality" placeholder="Специальность">
+    <datalist id="speciality">
+      <option value="Сантехник"></option>
+      <option value="Грузчик"></option>
+      <option value="Менеджер по клинингу"></option>
+      <option value="Продавец"></option>
+    </datalist>
+    <input type="date">
+    <h4>Группа</h4>
+    <input type="text" list="student_group_num" placeholder="Номер группы">
+    <datalist id="student_group_num">
+      <option value="14"></option>
+      <option value="12"></option>
+      <option value="21"></option>
+      <option value="999"></option>
+    </datalist>
+    <p></p>
+    <h4>Дата зачисления</h4>
+    <input type="date">
+    <p></p>
+    <h4>Адрес прописки</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Адрес фактического проживания</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Контактные данные</h4>
+    <input type="text" placeholder="Электронная почта">
+    <input type="text" placeholder="Контактный телефон">
+    <p></p>
+    <button style="float:right" onclick="ModalWindow('student_open')">Закрыть</button>
+    <button style="float:right" onclick="ModalWindow('student_open')">Сбросить</button>
+    <button style="float:right">Сохранить</button>
+    <button style="float:right" onclick="ModalWindow('student_open')">Редактировать</button>
+  </form>
+  <form id="student_open2" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">Поиск</legend>
+    <h4>Основная информация</h4>
+    <textarea placeholder="Фамилия"></textarea>
+    <textarea placeholder="Имя"></textarea>
+    <textarea placeholder="Отчество"></textarea>
+    <p></p>
+    <input type="text" list="social_status" placeholder="Социальный статус">
+    <datalist id="social_status">
+      <option value="Безработный"></option>
+      <option value="Пенсионер"></option>
+      <option value="Беременная"></option>
+      <option value="Инвалид"></option>
+    </datalist>
+    <input type="text" list="speciality" placeholder="Специальность">
+    <datalist id="speciality">
+      <option value="Сантехник"></option>
+      <option value="Грузчик"></option>
+      <option value="Менеджер по клинингу"></option>
+      <option value="Продавец"></option>
+    </datalist>
+    <input type="date">
+    <h4>Группа</h4>
+    <input type="text" list="student_group_num" placeholder="Номер группы">
+    <datalist id="student_group_num">
+      <option value="14"></option>
+      <option value="12"></option>
+      <option value="21"></option>
+      <option value="999"></option>
+    </datalist>
+    <p></p>
+    <h4>Дата зачисления</h4>
+    <input type="date">
+    <p></p>
+    <h4>Адрес прописки</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Адрес фактического проживания</h4>
+    <input type="text" list="district" placeholder="Район">
+    <datalist id="district">
+      <option value="Тосно"></option>
+      <option value="Выборг"></option>
+      <option value="Ломоносов"></option>
+      <option value="Лисий Нос"></option>
+    </datalist>
+    <input type="text" list="street" placeholder="Улица, проспект, т.д...">
+    <datalist id="street">
+      <option value="улица Фрунзе"></option>
+      <option value="проспект Ленина"></option>
+      <option value="улица Хошимина"></option>
+      <option value="бульвар Энгельса"></option>
+    </datalist>
+    <input type="text" list="house" placeholder="Дом / корпус">
+    <datalist id="house">
+      <option value="228/1"></option>
+      <option value="228/2"></option>
+      <option value="1488/3"></option>
+      <option value="101/1"></option>
+    </datalist>
+    <h4>Контактные данные</h4>
+    <input type="text" placeholder="Электронная почта">
+    <input type="text" placeholder="Контактный телефон">
+    <p></p>
+    <button style="float:right" onclick="ModalWindow('student_open2')">Закрыть</button>
+    <button style="float:right" onclick="ModalWindow('student_open2')">Сбросить</button>
+    <button style="float:right">Поиск</button>
+  </form>
+  <form id="student_history" class="modal_content">
+    <legend style="text-align:center;border-bottom:1px grey solid;margin-bottom:5px">История обучения</legend>
+    <table>
+      <thead>
+        <tr>
+          <th>Дата</th>
+          <th>Тема</th>
+          <th>Присутствие</th>
+          <th>Оценка</th>
+        </tr>
+      </thead>
+      <tr>
+        <th>01.01.2018</th>
+        <th>Введение</th>
+        <th>Да</th>
+        <th>-</th>
+      </tr>
+    </table>
+    <button style="float:right" onclick="ModalWindow('student_history')">Назад</button>
+  </form>
+</div>
+
+</html>

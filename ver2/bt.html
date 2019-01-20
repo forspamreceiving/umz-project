@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Биржа труда</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bt.css">
+</head>
+
+<body>
+  <header>
+    <div id="header_bar">
+      <div>Профиль тут
+        <button id="sign_out">Выйти</button>
+      </div>
+    </div>
+    <nav id="slider_menu">
+      <label>
+        <div>
+          <img src="close.png">
+        </div>
+        <a href="#">Создать заявку</a>
+      </label>
+      <label>
+        <div>
+          <img src="close.png">
+        </div>
+        <a href="#">Заявки</a>
+      </label>
+      <label>
+        <div>
+          <img src="close.png">
+        </div>
+        <a href="#">Специальности</a>
+      </label>
+    </nav>
+  </header>
+  <div id="content">
+    <form id="1" class="content_form">
+      <center>
+        <h2>Создание заявки</h2>
+      </center>
+      <p>Основная информация</p>
+      <textarea placeholder="Фамилия"></textarea>
+      <textarea placeholder="Имя"></textarea>
+      <textarea placeholder="Отчество"></textarea>
+      <p></p>
+      <input type="text" list="social_status" placeholder="Соц.статус">
+      <datalist id="social_status">
+        <option value="Безработный"></option>
+        <option value="Пенсионер"></option>
+        <option value="Инвалид"></option>
+        <option value="С ребенком"></option>
+      </datalist>
+      <input type="text" list="specialities" placeholder="Соц.статус">
+      <datalist id="specialities">
+        <option value="Сантехник"></option>
+        <option value="Менеджер"></option>
+        <option value="Сварщик"></option>
+      </datalist>
+      <input type="date">
+      <p>Паспортные данные</p>
+      <textarea placeholder="Серия"></textarea>
+      <textarea placeholder="Номер"></textarea>
+      <p>Адрес прописки</p>
+      <input type="text" list="1area" placeholder="Район">
+      <datalist id="1area">
+        <option value="Приозерский"></option>
+        <option value="Выборгский"></option>
+      </datalist>
+      <input type="text" list="1street" placeholder="Улица, проспект, т.д...">
+      <datalist id="1street">
+        <option value="ул. Фрунзе"></option>
+        <option value="пр. Непокоренных"></option>
+      </datalist>
+      <input type="text" list="1house" placeholder="Дом / корпус">
+      <datalist id="1house">
+        <option value="д. 27/1"></option>
+        <option value="д. 12/2"></option>
+      </datalist>
+      <p>Адрес фактического проживания</p>
+      <input type="text" list="1area" placeholder="Район">
+      <datalist id="1area">
+        <option value="Приозерский"></option>
+        <option value="Выборгский"></option>
+      </datalist>
+      <input type="text" list="1street" placeholder="Улица, проспект, т.д...">
+      <datalist id="1street">
+        <option value="ул. Фрунзе"></option>
+        <option value="пр. Непокоренных"></option>
+      </datalist>
+      <input type="text" list="1house" placeholder="Дом / корпус">
+      <datalist id="1house">
+        <option value="д. 27/1"></option>
+        <option value="д. 12/2"></option>
+      </datalist>
+      <p>Контактные данные</p>
+      <input type="text" placeholder="Адрес эл.почты">
+      <input type="text" placeholder="Контактный номер">
+      <p></p>
+      <div class="btns">
+        <button>Отмена</button>
+        <button>Создать заявку</button>
+      </div>
+    </form>
+    <form id="2" class="content_form">
+      <center>
+        <h2>Поиск заявок</h2>
+      </center>
+      <p>Основная информация</p>
+      <textarea placeholder="Фамилия"></textarea>
+      <textarea placeholder="Имя"></textarea>
+      <textarea placeholder="Отчество"></textarea>
+      <p></p>
+      <input type="text" list="social_status" placeholder="Соц.статус">
+      <datalist id="social_status">
+        <option value="Безработный"></option>
+        <option value="Пенсионер"></option>
+        <option value="Инвалид"></option>
+        <option value="С ребенком"></option>
+      </datalist>
+      <input type="text" list="specialities" placeholder="Соц.статус">
+      <datalist id="specialities">
+        <option value="Сантехник"></option>
+        <option value="Менеджер"></option>
+        <option value="Сварщик"></option>
+      </datalist>
+      <input type="date">
+      <p>Паспортные данные</p>
+      <textarea placeholder="Серия"></textarea>
+      <textarea placeholder="Номер"></textarea>
+      <p>Адрес прописки</p>
+      <input type="text" list="1area" placeholder="Район">
+      <datalist id="1area">
+        <option value="Приозерский"></option>
+        <option value="Выборгский"></option>
+      </datalist>
+      <input type="text" list="1street" placeholder="Улица, проспект, т.д...">
+      <datalist id="1street">
+        <option value="ул. Фрунзе"></option>
+        <option value="пр. Непокоренных"></option>
+      </datalist>
+      <input type="text" list="1house" placeholder="Дом / корпус">
+      <datalist id="1house">
+        <option value="д. 27/1"></option>
+        <option value="д. 12/2"></option>
+      </datalist>
+      <p>Адрес фактического проживания</p>
+      <input type="text" list="1area" placeholder="Район">
+      <datalist id="1area">
+        <option value="Приозерский"></option>
+        <option value="Выборгский"></option>
+      </datalist>
+      <input type="text" list="1street" placeholder="Улица, проспект, т.д...">
+      <datalist id="1street">
+        <option value="ул. Фрунзе"></option>
+        <option value="пр. Непокоренных"></option>
+      </datalist>
+      <input type="text" list="1house" placeholder="Дом / корпус">
+      <datalist id="1house">
+        <option value="д. 27/1"></option>
+        <option value="д. 12/2"></option>
+      </datalist>
+      <p>Контактные данные</p>
+      <input type="text" placeholder="Адрес эл.почты">
+      <input type="text" placeholder="Контактный номер">
+      <p></p>
+      <div class="btns">
+        <button>Отмена</button>
+        <button>Поиск</button>
+      </div>
+    </form>
+    <form id="3" class="content_form">
+      <center>
+        <h2>Редактирование зявки</h2>
+      </center>
+      <p>Основная информация</p>
+      <textarea placeholder="Фамилия"></textarea>
+      <textarea placeholder="Имя"></textarea>
+      <textarea placeholder="Отчество"></textarea>
+      <p></p>
+      <input type="text" list="social_status" placeholder="Соц.статус">
+      <datalist id="social_status">
+        <option value="Безработный"></option>
+        <option value="Пенсионер"></option>
+        <option value="Инвалид"></option>
+        <option value="С ребенком"></option>
+      </datalist>
+      <input type="text" list="specialities" placeholder="Соц.статус">
+      <datalist id="specialities">
+        <option value="Сантехник"></option>
+        <option value="Менеджер"></option>
+        <option value="Сварщик"></option>
+      </datalist>
+      <input type="date">
+      <p>Паспортные данные</p>
+      <textarea placeholder="Серия"></textarea>
+      <textarea placeholder="Номер"></textarea>
+      <p>Адрес прописки</p>
+      <input type="text" list="1area" placeholder="Район">
+      <datalist id="1area">
+        <option value="Приозерский"></option>
+        <option value="Выборгский"></option>
+      </datalist>
+      <input type="text" list="1street" placeholder="Улица, проспект, т.д...">
+      <datalist id="1street">
+        <option value="ул. Фрунзе"></option>
+        <option value="пр. Непокоренных"></option>
+      </datalist>
+      <input type="text" list="1house" placeholder="Дом / корпус">
+      <datalist id="1house">
+        <option value="д. 27/1"></option>
+        <option value="д. 12/2"></option>
+      </datalist>
+      <p>Адрес фактического проживания</p>
+      <input type="text" list="1area" placeholder="Район">
+      <datalist id="1area">
+        <option value="Приозерский"></option>
+        <option value="Выборгский"></option>
+      </datalist>
+      <input type="text" list="1street" placeholder="Улица, проспект, т.д...">
+      <datalist id="1street">
+        <option value="ул. Фрунзе"></option>
+        <option value="пр. Непокоренных"></option>
+      </datalist>
+      <input type="text" list="1house" placeholder="Дом / корпус">
+      <datalist id="1house">
+        <option value="д. 27/1"></option>
+        <option value="д. 12/2"></option>
+      </datalist>
+      <p>Контактные данные</p>
+      <input type="text" placeholder="Адрес эл.почты">
+      <input type="text" placeholder="Контактный номер">
+      <p></p>
+      <div class="btns">
+        <button>Отмена</button>
+        <button>Сохранить изменения</button>
+      </div>
+    </form>
+    <form id="4" class="content_form">
+      <center>
+        <h2>Результат поиска заявок</h2>
+      </center>
+      <table>
+        <thead>
+          <tr>
+            <th>ФИО</th>
+            <th>Дата оформления</th>
+            <th>Специальность</th>
+            <th colspan="2">Серия/номер паспорта</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>Борисенко Н.И.</th>
+          <th>16.11.2018</th>
+          <th>Сантехник</th>
+          <th>4013</th>
+          <th>568362</th>
+        </tr>
+        <tr style="height:200px;">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+      <p></p>
+      <div class="btns">
+        <button>Закрыть</button>
+        <button>Отозвать заявку</button>
+        <button>История изменений</button>
+        <button>Подробнее</button>
+      </div>
+    </form>
+    <form id="5" class="content_form">
+      <center>
+        <h2>История изменений</h2>
+      </center>
+      <table>
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Тип</th>
+            <th>Редактор</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>18.01.2018</th>
+          <th>Редактирование</th>
+          <th>Оператор БТ</th>
+        </tr>
+        <tr style="height:200px;">
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+      <p></p>
+      <div class="btns">
+        <button>Закрыть</button>
+      </div>
+    </form>
+    <form id="6" class="content_form">
+      <center>
+        <h2>Список специальностей</h2>
+      </center>
+      <input type="text" list="search_speciality" placeholder="Специальность">
+      <datalist id="search_speciality">
+        <option value="1"></option>
+        <option value="2"></option>
+      </datalist>
+      <input type="text" list="search_area" placeholder="Район">
+      <datalist id="search_area">
+        <option value="1"></option>
+        <option value="2"></option>
+      </datalist>
+      <input type="text" list="search_spot" placeholder="Площадка">
+      <datalist id="search_spot">
+        <option value="1"></option>
+        <option value="2"></option>
+      </datalist>
+      <p></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Специальность</th>
+            <th>Район</th>
+            <th>Площадка</th>
+            <th>Номер группы</th>
+            <th>Преподаватель</th>
+            <th>Кол-во обучающихся</th>
+          </tr>
+        </thead>
+        <tr class="row-hover">
+          <th>Сантехник</th>
+          <th>Приозерский</th>
+          <th>Приоз. 3</th>
+          <th>26</th>
+          <th>Петренко П.П.</th>
+          <th>14</th>
+        </tr>
+        <tr style="height:200px;">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+      <p></p>
+      <div class="btns">
+        <button>Закрыть</button>
+        <button>Подробнее</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

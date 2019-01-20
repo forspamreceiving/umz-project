@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=cyrillic-ext');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  background-color: #f2f2f2;
+}
+
+#flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tabs-wrapper {
+  background-color: #afeeee;
+  text-align: center;
+  height: 100%;
+  width: 20%;
+}
+
+input[name="tabs"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+input[name="tabs"]~div {
+  padding: 142px 50px 142px 50px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[name="tabs"]:checked~div {
+  background-color: #3cb371;
+  color: white;
+}
+
+#page-content {
+  width: 80%;
+  padding: 50px 15px 50px 15px;
+}
+
+#page-content>fieldset {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#page-content>fieldset>legend:first-child {
+  font-size: 25px;
+}
+
+#page-content>fieldset>legend {
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+
+#page-content>fieldset>textarea {
+  padding: 5px 10px 5px 10px;
+  border: 1px grey solid;
+  margin-bottom: 15px;
+  height: 25px;
+  font-size: 18px;
+  resize: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+#page-content>fieldset>input {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  height: 25px;
+  font-size: 18px;
+  border: 1px grey solid;
+  outline: none;
+  color: grey;
+}
+
+#page-content>fieldset>div>div>input {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  height: 25px;
+  font-size: 18px;
+  border: 1px grey solid;
+  outline: none;
+  color: grey;
+}
+
+#page-content>fieldset>select {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px grey solid;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#page-content>fieldset>button {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px grey solid;
+  box-shadow: 0 0 1px;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  float: right;
+}
+
+#select-wrapper>select {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px grey solid;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 15px;
+  background-color: white;
+  margin: 10px;
+}
+
+table>thead>tr>th {
+  font-size: 17px;
+}
+
+table, tr, th {
+  border: 1px grey solid;
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons>button {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px grey solid;
+  width: 50%;
+  box-shadow: 0 0 1px;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tables {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*
+@media screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: blue;
+  }
+}
+*/

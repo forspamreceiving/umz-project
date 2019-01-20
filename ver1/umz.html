@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>УМЦ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="flex">
+    <div id="tabs-wrapper">
+      <section id="section1">
+        <label>
+          <input type="radio" name="tabs" value="tab1">
+          <div>Заявки</div>
+        </label>
+      </section>
+      <section id="section2">
+        <label>
+          <input type="radio" name="tabs" value="tab2">
+          <div>Группы</div>
+        </label>
+      </section>
+      <section id="section3">
+        <label>
+          <input type="radio" name="tabs" value="tab3">
+          <div>Обучающийся</div>
+        </label>
+      </section>
+    </div>
+    <div id="page-content">
+      <div class="buttons">
+        <button>Создание</button>
+        <button>Список</button>
+      </div>
+      <fieldset name="10" style="width:96%;">
+        <select style="width:33%;">
+          <option selected disabled style="color:grey;">Специальность</option>
+        </select>
+        <select style="width:33%;">
+          <option selected disabled style="color:grey;">Учебная площадка</option>
+        </select>
+        <select style="width:33%;">
+          <option selected disabled style="color:grey;">Преподаватель</option>
+        </select>
+        <p></p>
+        <div class="dates">
+          <div>
+            Дата начала:
+            <input type="date">
+          </div>
+          <div>
+            Дата окончания:
+            <input type="date">
+          </div>
+        </div>
+        <div class="tables">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3">Сформированная группа</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>Иванов И.И.</th>
+              <th>
+                <button>Убрать из группы</button>
+              </th>
+              <th>
+                <button>Добавить в группу</button>
+              </th>
+            </tr>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Ожидают формирования</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>Иванов И.И.</th>
+              <th>
+                <button>Убрать из группы</button>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <button>Отмена</button>
+        <button>Утвердить состав</button>
+      </fieldset>
+      <fieldset name="111">
+        <table style="width:98%;">
+          <thead>
+            <tr>
+              <th colspan="5">Группы</th>
+            </tr>
+            <tr>
+              <th>Номер</th>
+              <th>Специальность</th>
+              <th>Площадка</th>
+              <th>Количество обучающихся</th>
+              <th>Статус</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>1488</th>
+            <th>Сантехник</th>
+            <th>Тосно</th>
+            <th>19</th>
+            <th>На обучении</th>
+          </tr>
+          <tr>
+            <th colspan="5" style="height:250px;"></th>
+          </tr>
+        </table>
+        <button>Отмена</button>
+        <button>Редактировать</button>
+        <button>Удалить</button>
+      </fieldset>
+      <fieldset name="10" style="width:96%;">
+        <select style="width:33%;">
+          <option selected disabled style="color:grey;">Специальность</option>
+        </select>
+        <select style="width:33%;">
+          <option selected disabled style="color:grey;">Учебная площадка</option>
+        </select>
+        <select style="width:33%;">
+          <option selected disabled style="color:grey;">Преподаватель</option>
+        </select>
+        <p></p>
+        <div class="dates">
+          <div>
+            Дата начала:
+            <input type="date">
+          </div>
+          <div>
+            Дата окончания:
+            <input type="date">
+          </div>
+        </div>
+        <div class="tables">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3">Сформированная группа</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>Иванов И.И.</th>
+              <th>
+                <button>Убрать из группы</button>
+              </th>
+              <th>
+                <button>Добавить в группу</button>
+              </th>
+            </tr>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Ожидают формирования</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>Иванов И.И.</th>
+              <th>
+                <button>Убрать из группы</button>
+              </th>
+            </tr>
+          </table>
+        </div>
+        <button>Отмена</button>
+        <button>Сохранить изменения</button>
+      </fieldset>
+      <fieldset name="3" style="visibility:hidden;position:absolute">
+        <legend>Поиск обучающихся</legend>
+        <textarea placeholder="Фамилия" style="width:30.5%"></textarea>
+        <textarea placeholder="Имя" style="width:30.5%"></textarea>
+        <textarea placeholder="Отчество" style="width:30.5%"></textarea>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Социальный статус</option>
+          <option>Беременная</option>
+          <option>Инвалид</option>
+          <option>Безработный</option>
+          <option>фывфыв</option>
+        </select>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Специальность</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+        </select>
+        <legend>Дата рождения</legend>
+        <input type="date">
+        <legend>Паспортные данные</legend>
+        <textarea placeholder="Серия" style="width:10%"></textarea>
+        <textarea placeholder="Номер" style="width:15%"></textarea>
+        <legend>Адрес</legend>
+        <textarea placeholder="Адрес прописки" style="display:block;width:80%;"></textarea>
+        <textarea placeholder="Адрес фактического проживания" style="display:block;width:80%;"></textarea>
+        <legend>Контактные данные</legend>
+        <textarea placeholder="Номер мобильного телефона" style="display:block;width:30%;"></textarea>
+        <textarea placeholder="Адрес электронной почты" style="display:block;width:30%;"></textarea>
+        <button>Очистить фильтры</button>
+        <button>Поиск</button>
+      </fieldset>
+      <fieldset style="width:30%;margin-left: 335px;">
+        <legend>Информация о заявке</legend>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4">Площадка№2 - г. Тосно, ул. Наличная, д. 28</th>
+            </tr>
+            <tr>
+              <th colspan="4">Преподаватель: Петров П.П.</th>
+            </tr>
+            <tr>
+              <th colspan="4">Расписание</th>
+            </tr>
+            <tr>
+              <th colspan="2">Начало 01.01.2018</th>
+              <th colspan="2">Конец 01.02.2018</th>
+            </tr>
+            <tr>
+              <th colspan="4">Кол-во часов обучения: 48</th>
+            </tr>
+            <tr>
+              <th>Дата</th>
+              <th>Тема</th>
+              <th>Присутствие</th>
+              <th>Оценка</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>02.01.2018</th>
+            <th>Введение</th>
+            <th>Да</th>
+            <th>-</th>
+          </tr>
+        </table>
+        <button>Открыть</button>
+        <button>Выйти</button>
+        <button>Назад</button>
+      </fieldset>
+      <fieldset name="3">
+        <legend>Поиск обучающихся</legend>
+        <textarea placeholder="Фамилия" style="width:30.5%"></textarea>
+        <textarea placeholder="Имя" style="width:30.5%"></textarea>
+        <textarea placeholder="Отчество" style="width:30.5%"></textarea>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Социальный статус</option>
+          <option>Беременная</option>
+          <option>Инвалид</option>
+          <option>Безработный</option>
+          <option>фывфыв</option>
+        </select>
+        <select style="width:20%;">
+          <option selected disabled style="color:grey;">Специальность</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+          <option>Беременная</option>
+        </select>
+        <legend>Дата рождения</legend>
+        <input type="date">
+        <legend>Паспортные данные</legend>
+        <textarea placeholder="Серия" style="width:10%"></textarea>
+        <textarea placeholder="Номер" style="width:15%"></textarea>
+        <legend>Адрес</legend>
+        <textarea placeholder="Адрес прописки" style="display:block;width:80%;"></textarea>
+        <textarea placeholder="Адрес фактического проживания" style="display:block;width:80%;"></textarea>
+        <legend>Контактные данные</legend>
+        <textarea placeholder="Номер мобильного телефона" style="display:block;width:30%;"></textarea>
+        <textarea placeholder="Адрес электронной почты" style="display:block;width:30%;"></textarea>
+        <button>Очистить фильтры</button>
+        <button>Поиск</button>
+      </fieldset>
+      <fieldset name="4">
+        <legend>Результаты поиска</legend>
+        <table>
+          <thead>
+            <tr>
+              <th>Статус</th>
+              <th>Дата оформления</th>
+              <th>Фамилия</th>
+              <th>Имя</th>
+              <th>Отчество</th>
+              <th>Специальность</th>
+              <th>Паспорт</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>Отменена</th>
+            <th>01.01.2018</th>
+            <th>Иванов</th>
+            <th>Иван</th>
+            <th>Иванович</th>
+            <th>Сантехник</th>
+            <th>4013 123456</th>
+          </tr>
+          <tr style="height:500px;">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+        <button>Отмена</button>
+        <button>Назад</button>
+        <button>Отзыв</button>
+        <button>История</button>
+        <button>Открыть</button>
+      </fieldset>
+      <fieldset name="4" style="visibility:hidden;position:absolute">
+        <legend>Результаты поиска</legend>
+        <table>
+          <thead>
+            <tr>
+              <th>Статус</th>
+              <th>Дата оформления</th>
+              <th>Фамилия</th>
+              <th>Имя</th>
+              <th>Отчество</th>
+              <th>Специальность</th>
+              <th>Паспорт</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>Отменена</th>
+            <th>01.01.2018</th>
+            <th>Иванов</th>
+            <th>Иван</th>
+            <th>Иванович</th>
+            <th>Сантехник</th>
+            <th>4013 123456</th>
+          </tr>
+          <tr style="height:500px;">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+        <button>Отмена</button>
+        <button>Откорректировать</button>
+        <button>Отклонить</button>
+      </fieldset>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

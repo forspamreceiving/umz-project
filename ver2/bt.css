@@ -1,0 +1,44 @@
+form {
+  width: 75%;
+  height: auto;
+  margin-top: 25px !important;
+  margin-left: 240px;
+  padding: 15px 20px 60px 20px;
+}
+
+form>textarea {
+  resize: none;
+  outline: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  width: 25%;
+  height: 22px;
+  font-size: 17px;
+}
+
+form>input[type="text"], input[type="date"] {
+  outline: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  width: 25%;
+  height: 22px;
+  font-size: 17px;
+  border: 0.5px grey solid;
+  color: grey;
+}
+
+.btns>button {
+  border: 1px grey solid;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px 10px 5px 10px;
+  float: right;
+  margin-left: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btns>button:hover {
+  color: white;
+  background-color: grey;
+}
