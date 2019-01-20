@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow:hidden;">
 
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="custom.css">
   <title>УМЦ</title>
 </head>
@@ -11,7 +12,7 @@
 <body>
 
 
-  <div class="w-100 ph4 pv4 bb">
+  <div class="w-100 ph4 pv4 bb b--light-silver">
     <div class="flex justify-end">
       <input class="ph2 pv1" type="button" name="" value="Выйти">
     </div>
@@ -19,21 +20,33 @@
 
 
   <div class="flex justify-between" style="height:89%;">
-    <div id="sidenav" class="w-10 flex flex-column br" style="justify-content: start;">
-      <div class="pv5 tc">
+    <div id="sidenav" class="w-15 flex flex-column br b--light-silver" style="justify-content:start;">
+      <div class="pv4 ph1 tc hover">
+        <div class="">
+          <i class="material-icons" style="color:red;font-size:40px">3d_rotation</i>
+        </div>
         Заявки
       </div>
-      <div class="pv5 tc">
+      <div class="pv4 ph1 tc hover">
+        <div class="">
+          <i class="material-icons" style="color:red;font-size:40px">3d_rotation</i>
+        </div>
         Обучение
       </div>
-      <div class="pv5 tc">
+      <div class="pv4 ph1 tc hover">
+        <div class="">
+          <i class="material-icons" style="color:red;font-size:40px">3d_rotation</i>
+        </div>
         Обучающийся
       </div>
-      <div class="pv5 tc">
+      <div class="pv4 ph1 tc hover">
+        <div class="">
+          <i class="material-icons" style="color:red;font-size:40px">3d_rotation</i>
+        </div>
         Документы
       </div>
     </div>
-    <div id="content" class="w-90 ph3 pv2">
+    <div id="content" class="w-100 ph3 pv2">
       <div class="flex justify-between">
         <input class="w-25 ph3 pv2" type="button" name="" value="Безработные">
         <input class="w-25 ph3 pv2" type="button" name="" value="Пенсионеры">
@@ -42,14 +55,81 @@
       </div>
 
 
-      <form class="w-100 ph3 pv3 mt1 br2 ba" method="post" style="position:absolute;visibility:hidden;">
+      <form class="w-100 ph3 pv3 mt1 br2 ba b--light-silver" method="post" style="position:absolute;visibility:hidden;">
+        <div>
+          <input class="ph2 pv1" type="button" name="" value="Поиск">
+          <input class="ph2 pv1" type="button" name="" value="Сбросить">
+        </div>
+        <p></p>
+        <div class="w-90 pb1 tc">Результат поиска</div>
+        <table class="w-90 bg-white">
+          <thead>
+            <th class="w-10 pa1 tc">Фамилия</th>
+            <th class="w-10 pa1 tc">Имя</th>
+            <th class="w-10 pa1 tc">Отчество</th>
+            <th class="w-10 pa1 tc">Серия</th>
+            <th class="w-10 pa1 tc">Номер</th>
+            <th class="w-10 pa1 tc">Специальность</th>
+            <th class="w-10 pa1 tc">Дата зачисления</th>
+            <th class="w-10 pa1 tc">Статус</th>
+            <th class="w-10 pa1 tc">Группа</th>
+          </thead>
+        </table>
+        <table class="w-90 bg-white table_scroll">
+          <thead>
+            <th class="w-10 pa1 tc">Фамилия</th>
+            <th class="w-10 pa1 tc">Имя</th>
+            <th class="w-10 pa1 tc">Отчество</th>
+            <th class="w-10 pa1 tc">Серия</th>
+            <th class="w-10 pa1 tc">Номер</th>
+            <th class="w-10 pa1 tc">Специальность</th>
+            <th class="w-10 pa1 tc">Дата зачисления</th>
+            <th class="w-10 pa1 tc">Статус</th>
+            <th class="w-10 pa1 tc">Группа</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Обучается</td>
+              <td class="pa1 tc">31</td>
+            </tr>
+          </tbody>
+        </table>
+        <p></p>
+        <div class="flex justify-end">
+          <input class="ph2 pv1 ml1" type="button" name="" value="Открыть">
+          <input class="ph2 pv1 ml1" type="button" name="" value="История обучения">
+        </div>
+      </form>
+
+
+      <form class="w-100 ph3 pv3 mt1 br2 ba b--light-silver" method="post" style="position:absolute;visibility:hidden;">
         <div>
           <input class="ph2 pv1" type="button" name="" value="Поиск">
           <input class="ph2 pv1" type="button" name="" value="Сбросить">
         </div>
         <p></p>
         <div class="pb1 tc">Результат поиска</div>
-        <table class="bg-white">
+        <p></p>
+        <table class="bg-white w-100">
+          <thead>
+            <th class="w-10 pa1 tc">Фамилия</th>
+            <th class="w-10 pa1 tc">Имя</th>
+            <th class="w-10 pa1 tc">Отчество</th>
+            <th class="w-10 pa1 tc">Серия</th>
+            <th class="w-10 pa1 tc">Номер</th>
+            <th class="w-10 pa1 tc">Специальность</th>
+            <th class="w-10 pa1 tc">Дата подачи</th>
+            <th class="w-10 pa1 tc">Статус</th>
+          </thead>
+        </table>
+        <table class="bg-white w-100 table_scroll">
           <thead>
             <th class="w-10 pa1 tc">Фамилия</th>
             <th class="w-10 pa1 tc">Имя</th>
@@ -71,6 +151,76 @@
               <td class="pa1 tc">01.01.2019</td>
               <td class="pa1 tc">Ожидает рассмотрения</td>
             </tr>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Ожидает рассмотрения</td>
+            </tr>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Ожидает рассмотрения</td>
+            </tr>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Ожидает рассмотрения</td>
+            </tr>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Ожидает рассмотрения</td>
+            </tr>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Ожидает рассмотрения</td>
+            </tr>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Ожидает рассмотрения</td>
+            </tr>
+            <tr>
+              <td class="pa1 tc">Барабаш</td>
+              <td class="pa1 tc">Валентин</td>
+              <td class="pa1 tc">Вареникович</td>
+              <td class="pa1 tc">4013</td>
+              <td class="pa1 tc">148826</td>
+              <td class="pa1 tc">Прораб</td>
+              <td class="pa1 tc">01.01.2019</td>
+              <td class="pa1 tc">Ожидает рассмотрения</td>
+            </tr>
           </tbody>
         </table>
         <p></p>
@@ -82,7 +232,7 @@
       </form>
 
 
-      <form class="w-100 ph3 pv3 mt1 br2 ba" method="post" style="position:absolute;visibility:hidden;">
+      <form class="w-100 ph3 pv3 mt1 br2 ba b--light-silver" method="post" style="position:absolute;visibility:hidden;">
         <div>
           <input class="ph2 pv1" type="button" name="" value="Поиск">
           <input class="ph2 pv1" type="button" name="" value="Сбросить">
@@ -90,7 +240,21 @@
         </div>
         <p></p>
         <div class="pb1 tc">Учебные группы</div>
-        <table class="bg-white">
+        <table class="bg-white w-100">
+          <thead>
+            <th class="w-10 pa1 tc">№</th>
+            <th class="w-10 pa1 tc">Площадка</th>
+            <th class="w-10 pa1 tc">Специальность</th>
+            <th class="w-10 pa1 tc">Кол-во часов</th>
+            <th class="w-10 pa1 tc">Кол-во чел./час.</th>
+            <th class="w-10 pa1 tc">Вид гос. услуги</th>
+            <th class="w-10 pa1 tc">Форма оказания услуги</th>
+            <th class="w-10 pa1 tc">Период обучения</th>
+            <th class="w-10 pa1 tc">Кол-во чел. в группе</th>
+            <th class="w-10 pa1 tc">Проверка</th>
+          </thead>
+        </table>
+        <table class="bg-white w-100 table_scroll">
           <thead>
             <th class="w-10 pa1 tc">№</th>
             <th class="w-10 pa1 tc">Площадка</th>
@@ -126,48 +290,7 @@
       </form>
 
 
-      <form class="w-100 ph3 pv3 mt1 br2 ba" method="post" style="position:absolute;visibility:hidden;">
-        <div>
-          <input class="ph2 pv1" type="button" name="" value="Поиск">
-          <input class="ph2 pv1" type="button" name="" value="Сбросить">
-        </div>
-        <p></p>
-        <div class="pb1 tc">Результат поиска</div>
-        <table class="bg-white">
-          <thead>
-            <th class="w-10 pa1 tc">Фамилия</th>
-            <th class="w-10 pa1 tc">Имя</th>
-            <th class="w-10 pa1 tc">Отчество</th>
-            <th class="w-10 pa1 tc">Серия</th>
-            <th class="w-10 pa1 tc">Номер</th>
-            <th class="w-10 pa1 tc">Специальность</th>
-            <th class="w-10 pa1 tc">Дата зачисления</th>
-            <th class="w-10 pa1 tc">Статус</th>
-            <th class="w-10 pa1 tc">Группа</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="pa1 tc">Барабаш</td>
-              <td class="pa1 tc">Валентин</td>
-              <td class="pa1 tc">Вареникович</td>
-              <td class="pa1 tc">4013</td>
-              <td class="pa1 tc">148826</td>
-              <td class="pa1 tc">Прораб</td>
-              <td class="pa1 tc">01.01.2019</td>
-              <td class="pa1 tc">Обучается</td>
-              <td class="pa1 tc">31</td>
-            </tr>
-          </tbody>
-        </table>
-        <p></p>
-        <div class="flex justify-end">
-          <input class="ph2 pv1 ml1" type="button" name="" value="Открыть">
-          <input class="ph2 pv1 ml1" type="button" name="" value="История обучения">
-        </div>
-      </form>
-
-
-      <form class="w-100 ph3 pv3 mt1 br2 ba" method="post" style="position:absolute;visibility:hidden;">
+      <form class="w-100 ph3 pv3 mt1 br2 ba b--light-silver" method="post" style="position:absolute;visibility:hidden;">
         <div>
           <input class="ph2 pv1" type="button" name="" value="Поиск">
           <input class="ph2 pv1" type="button" name="" value="Сбросить">
@@ -917,9 +1040,27 @@
         </form>
       </div>
 
-
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      // Change the selector if needed
+      var $table = $(''),
+        $bodyCells = $table.find('tbody tr:first').children(),
+        colWidth;
 
+      // Adjust the width of thead cells when window resizes
+      $(window).resize(function() {
+        // Get the tbody columns width array
+        colWidth = $bodyCells.map(function() {
+          return $(this).width();
+        }).get();
+
+        // Set the width of thead columns
+        $table.find('thead tr').children().each(function(i, v) {
+          $(v).width(colWidth[i]);
+        });
+      }).resize(); // Trigger resize handler
+    </script>
 </body>
 
 </html>

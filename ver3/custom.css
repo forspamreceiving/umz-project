@@ -7,13 +7,14 @@
 
 html {
   height: 100%;
-  background: linear-gradient(180deg, #fafafa, #d0e4ed);
+  background: linear-gradient(180deg, #fafafa, #cdf0ff);
   background-repeat: no-repeat;
 }
 
 body {
   height: 90%;
   min-height: 100%;
+  min-width: 100%;
 }
 
 input {
@@ -34,12 +35,46 @@ input[type="date"] {
 }
 
 #sidenav>div {
-  border-bottom: 1px black solid;
+  border-bottom: 1px rgb(192, 192, 192) solid;
+  background: linear-gradient(180deg, #fafafa, #cdf0ff);
+}
+
+#sidenav>div:hover {
+  background: linear-gradient(180deg, #fafafa, #8bd7f7);
+}
+
+.table_scroll {
+  height: 300px;
+  overflow-y: scroll;
+  display: block;
+}
+
+.table_scroll>thead {
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 table, th, tr, td {
+  word-break: break-word;
   border: 1px black solid;
   border-collapse: collapse;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background: rgba(80, 80, 80, 0.3);
+  height: 100%;
+  width: 100%;
 }
 
 ul#navmenu-v {
@@ -126,14 +161,4 @@ ul#navmenu-v li.iehover ul,
 ul#navmenu-v ul li.iehover ul,
 ul#navmenu-v ul ul li.iehover ul {
   display: block;
-}
-
-.modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 30;
-  background: rgba(80, 80, 80, 0.3);
-  height: 100%;
-  width: 100%;
 }
