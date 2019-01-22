@@ -49,12 +49,6 @@ input[type="date"] {
   display: block;
 }
 
-.table_scroll>thead {
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}
-
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
