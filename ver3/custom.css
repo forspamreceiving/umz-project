@@ -55,6 +55,22 @@ input[type="date"] {
   /* make scrollbar transparent */
 }
 
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[readonly] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div[noselect] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 table, th, tr, td {
   word-break: break-word;
   border: 1px black solid;
