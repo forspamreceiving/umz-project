@@ -49,10 +49,8 @@ input[type="date"] {
   display: block;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-  /* make scrollbar transparent */
+.div_scroll {
+  overflow-x: auto;
 }
 
 input::-webkit-calendar-picker-indicator {
