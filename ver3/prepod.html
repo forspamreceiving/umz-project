@@ -17,6 +17,125 @@
     </div>
   </div>
 
+  <div class="flex justify-center">
+    <form class="w-90 ph3 pv3 mt1 br2 ba b--light-silver" method="post" style="">
+      <div>
+        <input class="ph2 pv1" type="button" name="" value="Поиск">
+        <input class="ph2 pv1" type="button" name="" value="Сбросить">
+      </div>
+      <p></p>
+      <div class="pb1 tc">Группы</div>
+      <table class="bg-white w-100 table_scroll">
+        <thead>
+          <th class="w-10 pa1 tc">№</th>
+          <th class="w-10 pa1 tc">Площадка</th>
+          <th class="w-10 pa1 tc">Специальность</th>
+          <th class="w-10 pa1 tc">Кол-во часов</th>
+          <th class="w-10 pa1 tc">Кол-во чел./час.</th>
+          <th class="w-10 pa1 tc">Вид гос. услуги</th>
+          <th class="w-10 pa1 tc">Форма оказания услуги</th>
+          <th class="w-10 pa1 tc">Период обучения</th>
+          <th class="w-10 pa1 tc">Кол-во чел. в группе</th>
+          <th class="w-10 pa1 tc">Проверка</th>
+        </thead>
+        <tbody>
+          <tr class="hover-bg-black-10">
+            <td class="pa1 tc">31</td>
+            <td class="pa1 tc">Выборг</td>
+            <td class="pa1 tc">1С</td>
+            <td class="pa1 tc">240</td>
+            <td class="pa1 tc">1680</td>
+            <td class="pa1 tc">Пов. квал.</td>
+            <td class="pa1 tc">Сет.</td>
+            <td class="pa1 tc">01.01 - 01.03</td>
+            <td class="pa1 tc">7</td>
+            <td class="pa1 tc">7</td>
+          </tr>
+          <tr class="hover-bg-black-10">
+            <td class="pa1 tc">31</td>
+            <td class="pa1 tc">Выборг</td>
+            <td class="pa1 tc">1С</td>
+            <td class="pa1 tc">240</td>
+            <td class="pa1 tc">1680</td>
+            <td class="pa1 tc">Пов. квал.</td>
+            <td class="pa1 tc">Сет.</td>
+            <td class="pa1 tc">01.01 - 01.03</td>
+            <td class="pa1 tc">7</td>
+            <td class="pa1 tc">7</td>
+          </tr>
+          <tr class="hover-bg-black-10">
+            <td class="pa1 tc">31</td>
+            <td class="pa1 tc">Выборг</td>
+            <td class="pa1 tc">1С</td>
+            <td class="pa1 tc">240</td>
+            <td class="pa1 tc">1680</td>
+            <td class="pa1 tc">Пов. квал.</td>
+            <td class="pa1 tc">Сет.</td>
+            <td class="pa1 tc">01.01 - 01.03</td>
+            <td class="pa1 tc">7</td>
+            <td class="pa1 tc">7</td>
+          </tr>
+        </tbody>
+      </table>
+      <p></p>
+      <div class="flex justify-end">
+        <input class="ph2 pv1 ml1" type="button" name="" value="Открыть">
+      </div>
+    </form>
+  </div>
+
+  <div class="flex items-center justify-center modal" style="">
+    <form class="w-70 ph3 pv3 mt1 br2 ba bg-white" action="" method="post">
+      <div class="pb1 tc">Обучающиеся</div>
+      <p></p>
+
+      <div class="w-100 div_scroll">
+        <table class="w-100 bg-white">
+          <thead>
+            <tr>
+              <td class="w-30 tc pv1" nowrap>ФИО</td>
+              <td id="bvvd" class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+              <td class="w-10 tc" nowrap>10-10-2010</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover-bg-black-10">
+              <td class="w-30 tc pv1" nowrap>Барабаш Валентин Вареникович</td>
+              <td class="w-10 tc" nowrap>
+                <input class="w-100" list="bvvs" type="text" name="" value="">
+                <datalist id="bvvs" class="">
+                  <option value="Присутствие"></option>
+                  <option value="Отсутствие"></option>
+                  <option value="5"></option>
+                  <option value="4"></option>
+                  <option value="3"></option>
+                  <option value="2"></option>
+                </datalist>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <p></p>
+      <div class="flex justify-end">
+        <input class="ph2 pv1" type="button" name="" value="Закрыть">
+      </div>
+    </form>
+  </div>
+  <!-- окно авторизации в системе -->
   <div class="flex items-center justify-center modal" style="display:none;">
     <form class="w-20 ph3 pv3 mt1 br2 ba bg-white" action="" method="post">
       <div class="pb1 tc">Авторизация</div>
